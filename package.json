@@ -18,4 +18,10 @@
     "pg": "^8.11.3",
     "sequelize": "^6.37.1"
   }
+  {
+    "development": {
+      "dialect" : "sqlite",
+      "storage": "./database.sqlite"
+    }
+  }
 }

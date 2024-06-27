@@ -1,0 +1,7 @@
+<h1>Lista de Jogos</h1>
+<ul>
+  {{#each jogos}}
+    <li><a href="/jogos/{{this.id}}">{{this.nome}}</a></li>
+  {{/each}}
+</ul>
+<a href="/jogos/novo">Cadastrar Novo Jogo</a>

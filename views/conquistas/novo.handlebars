@@ -1,0 +1,9 @@
+<h1>Nova Conquista para o Jogo: {{jogo.nome}}</h1>
+<form action="/conquistas/novo/{{jogo.id}}" method="POST">
+  <label for="titulo">Título</label>
+  <input type="text" id="titulo" name="titulo">
+  <label for="descricao">Descrição</label>
+  <input type="text" id="descricao" name="descricao">
+  <button type="submit">Cadastrar</button>
+</form>
+<a href="/jogos/{{jogo.id}}">Voltar</a>

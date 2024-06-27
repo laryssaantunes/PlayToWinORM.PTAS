@@ -1,11 +1,29 @@
-const db = require("../db/conn");
-const { DataTypes } = require("sequelize");
+const { DataTypes } = require('sequelize');
+const db = require('../db/conn');
 
-const Jogo = db.define("Jogo", {
-  titulo: {
+
+
+const Jogo = db.define('Jogo', {
+  nome: {
     type: DataTypes.STRING,
+    allowNull: false
   },
-  // Há outros campos a serem inseridos aqui...
+  plataforma: {
+    type: DataTypes.STRING,
+    allowNull: false
+  },
+  genero: {
+    type: DataTypes.STRING,
+    allowNull: false
+  },
+  preco: {
+    type: DataTypes.FLOAT,
+    allowNull: false
+  },
+  lancamento: {
+    type: DataTypes.DATE,
+    allowNull: false
+  }
 });
 
 module.exports = Jogo;

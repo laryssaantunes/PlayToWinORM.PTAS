@@ -1,0 +1,10 @@
+<h1>Detalhes do Jogo: {{jogo.nome}}</h1>
+<p>Gênero: {{jogo.genero}}</p>
+<h2>Conquistas</h2>
+<ul>
+  {{#each jogo.conquistas}}
+    <li>{{this.titulo}}: {{this.descricao}}</li>
+  {{/each}}
+</ul>
+<a href="/conquistas/novo/{{jogo.id}}">Adicionar Conquista</a>
+<a href="/jogos">Voltar</a>
